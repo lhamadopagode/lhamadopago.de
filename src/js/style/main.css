@@ -1,0 +1,25 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/bg.png');
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.icon {
+  width: 36px;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.avatar-wrapper {
+  overflow: hidden;
+  border-radius: 250px;
+}
+
+.music-card {
+  display: flex;
+}
