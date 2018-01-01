@@ -8,6 +8,7 @@ class Layout extends React.Component {
     this.state = {
       cards: [],
     }
+    
   }
   
   componentDidMount(){
@@ -20,6 +21,7 @@ class Layout extends React.Component {
       this.setState({
         cards: tracks,
       });
+      window.pagode = this.state
     });
   }
   

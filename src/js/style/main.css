@@ -20,6 +20,26 @@ body {
   border-radius: 250px;
 }
 
+.wrapper {
+  margin: 0 -15px;
+}
+
 .music-card {
   display: flex;
+  justify-content: space-around;
+  background-color: rgba(25, 25, 25, 0.7);
+  border: 1px solid rgba(143, 143, 143, 0.7);  
+  border-radius: 6px;
+  padding: 15px;
+  color: white;
+  text-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+}
+
+.music-card__image {
+  padding-right: 15px;
+}
+
+.music-card__text span{
+  display: block;
 }
