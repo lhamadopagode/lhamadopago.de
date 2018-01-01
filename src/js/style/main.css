@@ -27,6 +27,7 @@ body {
 .music-card {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: rgba(25, 25, 25, 0.7);
   border: 1px solid rgba(143, 143, 143, 0.7);  
   border-radius: 6px;
@@ -34,10 +35,16 @@ body {
   color: white;
   text-shadow: 1px 1px 12px rgba(0,0,0,0.3);
   box-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+  height: 100%;
 }
 
 .music-card__image {
   padding-right: 15px;
+  flex-basis: 50%;
+}
+
+.music-card__text {
+  flex-basis: 50%;
 }
 
 .music-card__text span{

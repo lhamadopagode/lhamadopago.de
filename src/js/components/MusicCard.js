@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 
 export default function MusicCard(props) {
+  debugger;
   return (
     <div className="col-md-4"> 
       <div className="music-card">
         <div className="music-card__image">
-          <img className="img-fluid" src="http://placehold.it/200x200" alt=""/>
+          <img className="img-fluid" src={props.albumCover} alt=""/>
         </div>
         <div className="music-card__text">
-          <h4>Nome do artista</h4>
-          <span>Nome da música</span>
-          <span>Nome do álbum</span>
+          <h4>{props.artist}</h4>
+          <span>{props.trackName}</span>
+          <span>{props.albumTitle}</span>
         </div>
       </div>
     </div>

@@ -25,16 +25,22 @@ class Layout extends React.Component {
     });
   }
   
-  renderCards(){
+  renderCards(card){
     return (
-      <MusicCard />
+      <MusicCard 
+        albumTitle={card.album["#text"]}
+        albumCover={card.image[2]["#text"]}
+        artist={card.artist["#text"]}
+        trackName={card.name}
+      />
     )
   }
 
   render(){
+    let cardList = this.state.cards.map(this.renderCards.bind(this));
     return(
-      <div className="wrapper">
-        <MusicCard />
+      <div className="row align-items-stretch">
+        {cardList}
       </div>
     );
   }
